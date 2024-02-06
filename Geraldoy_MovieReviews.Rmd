@@ -1,0 +1,41 @@
+---
+title: "Geraldoy_Movie_Reviews"
+output: html_document
+date: "2024-02-06"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(rvest)
+library(dplyr)
+
+
+url <- "https://www.imdb.com/title/tt1587310/reviews?ref_=tt_urv"
+
+
+extract_movie_data <- function(url, num_reviews = 300) {
+  page <- read_html(url)
+  names <- page %>% html_nodes(".display-name-link") %>% html_text()
+  contents <- page %>% html_nodes(".text.show-more__control") %>% html_text()
+  stars <- page %>% html_nodes(".rating-other-user-rating span:nth-child(1)") %>% html_text()
+  dates <- page %>% html_nodes("span.review-date") %>% html_text()
+  
+
+  data <- data.frame(
+    Name = names[1:num_reviews],
+    Content = contents[1:num_reviews],
+    Stars = stars[1:num_reviews],
+    Date = dates[1:num_reviews]
+  )
+  
+  return(data)
+}
+
+maleficent_data <- extract_movie_data(url, num_reviews = 300)
+maleficent_data
+
+
+```
