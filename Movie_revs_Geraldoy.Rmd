@@ -2,7 +2,9 @@
 title: "movie review"
 author: "Catherine Geraldoy BSIT 2-B"
 date: "2024-02-06"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -318,6 +320,11 @@ maleficent_df12 <- data.frame(
 )
 
 maleficent_df12
+
+
+combine_maleficentdf <- rbind(maleficent_df, maleficent_df2, maleficent_df3, maleficent_df4, maleficent_df5, maleficent_df6, maleficent_df7, maleficent_df8, maleficent_df9, maleficent_df10, maleficent_df11, maleficent_df12)
+
+combine_maleficentdf
 
 ```
 
@@ -636,6 +643,11 @@ divergent_df12 <- data.frame(
 )
 
 divergent_df12
+
+
+combine_divergent <- rbind(divergent_df, divergent_df2, divergent_df3, divergent_df4, divergent_df5, divergent_df6, divergent_df7, divergent_df8, divergent_df9, divergent_df10, divergent_df11, divergent_df12)
+
+combine_divergent
 
 ```
 ```{r}
@@ -998,6 +1010,10 @@ cinderella_df12 <- data.frame(
 
 cinderella_df12
 
+combine_cinderella <- rbind(cinderella_df, cinderella_df2, cinderella_df3, cinderella_df4, cinderella_df5, cinderella_df6, cinderella_df7, cinderella_df8, cinderella_df9, cinderella_df10, cinderella_df11, cinderella_df12)
+
+combine_cinderella
+
 ```
 ```{r}
 #M4
@@ -1292,7 +1308,7 @@ for (url in True_Detective_12){
   content12 <- page %>%html_nodes("div.text.show-more__control")%>%html_text()
 }
 
-True_Detective_12 <- data.frame(
+True_Detective_df12 <- data.frame(
   Name = names12[1:25],
   Date = date12 [1:25],
   Rating = rating12 [1:25],
@@ -1302,7 +1318,9 @@ True_Detective_12 <- data.frame(
 
 True_Detective_12
 
+combine_True_Detective <- rbind(True_Detective_1, True_Detective_2, True_Detective_3, True_Detective_4, True_Detective_5, True_Detective_6, True_Detective_7, True_Detective_8, True_Detective_9, True_Detective_10, True_Detective_11, True_Detective_12)
 
+combine_True_Detective
 
 ```
 
@@ -1612,6 +1630,10 @@ pussnboots_df12 <- data.frame(
 
 pussnboots_df12
 
+combine_pussnboots_df <- rbind(pussnboots_df, pussnboots_df2, pussnboots_df3, pussnboots_df4, pussnboots_df5, pussnboots_df6, pussnboots_df7, pussnboots_df8, pussnboots_df9, pussnboots_df10, pussnboots_df11, pussnboots_df12)
+
+combine_pussnboots_df
+
 ```
 ```{r}
 #M6
@@ -1917,6 +1939,11 @@ InsideOut_12 <- data.frame(
 
 InsideOut_12
 
+
+combine_Inside_Out <- rbind(Inside_Out_1, Inside_Out_2, Inside_Out_3, Inside_Out_4, Inside_Out_5, Inside_Out_6, Inside_Out_7, Inside_Out_8, Inside_Out_9, Inside_Out_10, Inside_Out_11, Inside_Out_12)
+
+combine_Inside_Out
+
 ```
 
 ```{r}
@@ -2220,6 +2247,10 @@ Wonka_12 <- data.frame(
 )
 
 Wonka_12
+
+combine_Wonka <- rbind(Wonka_1, Wonka_2, Wonka_3, Wonka_4, Wonka_5, Wonka_6, Wonka_7, Wonka_8, Wonka_9, Wonka_10, Wonka_11, Wonka_12)
+
+combine_Wonka
 
 ```
 
@@ -2527,6 +2558,10 @@ Smith_12 <- data.frame(
 
 Smith_12
 
+
+combine_Smith <- rbind(Smith_1, Smith_2, Smith_3, Smith_4, Smith_5, Smith_6, Smith_7, Smith_8, Smith_9, Smith_10, Smith_11, Smith_12)
+
+combine_Smith
 ```
 
 
@@ -2835,6 +2870,10 @@ Argylle_12 <- data.frame(
 )
 
 Argylle_12
+
+combine_Argylle <- rbind(Argylle_1, Argylle_2, Argylle_3, Argylle_4, Argylle_5, Argylle_6, Argylle_7, Argylle_8, Argylle_9, Argylle_10, Argylle_11, Argylle_12)
+
+combine_Argylle
 ```
 
 
@@ -3139,5 +3178,14 @@ Fargo_12 <- data.frame(
 )
 
 Fargo_12
+
+
+combine_Fargo <- rbind(Fargo_1, Fargo_2, Fargo_3, Fargo_4, Fargo_5, Fargo_6, Fargo_7, Fargo_8, Fargo_9, Fargo_10, Fargo_11, Fargo_12)
+
+combine_Fargo
+
+combine_all_movie_revs <- rbind(combine_maleficentdf,combine_divergent, combine_cinderella, combine_True_Detective, combine_pussnboots_df, combine_Inside_Out, combine_Wonka, combine_Smith, combine_Argylle, combine_Fargo)
+
+combine_all_movie_revs
 
 ```
