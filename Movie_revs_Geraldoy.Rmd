@@ -1676,7 +1676,7 @@ for (url in Inside_Out_2){
   content2 <- page %>%html_nodes("div.text.show-more__control")%>%html_text()
 }
 
-InsideOut_2 <- data.frame(
+Inside_Out_2 <- data.frame(
   Name = names2[1:25],
   Date = date2 [1:25],
   Rating = rating2[1:25],
@@ -1684,7 +1684,7 @@ InsideOut_2 <- data.frame(
   Content = content2[1:25]
 )
 
-InsideOut_2
+Inside_Out_2
 
 
 
@@ -1700,7 +1700,7 @@ for (url in Inside_Out_3){
   content3 <- page %>%html_nodes("div.text.show-more__control")%>%html_text()
 }
 
-InsideOut_3 <- data.frame(
+Inside_Out_3 <- data.frame(
   Name = names3[1:25],
   Date = date3 [1:25],
   Rating = rating3 [1:25],
@@ -1708,7 +1708,7 @@ InsideOut_3 <- data.frame(
   Content = content3[1:25]
 )
 
-InsideOut_3
+Inside_Out_3
 
 
 
@@ -1725,7 +1725,7 @@ for (url in Inside_Out_4){
   content4 <- page %>%html_nodes("div.text.show-more__control")%>%html_text()
 }
 
-InsideOut_4 <- data.frame(
+Inside_Out_4 <- data.frame(
   Name = names4[1:25],
   Date = date4 [1:25],
   Rating = rating4 [1:25],
@@ -1733,7 +1733,7 @@ InsideOut_4 <- data.frame(
   Content = content3[1:25]
 )
 
-InsideOut_4
+Inside_Out_4
 
 
 
@@ -1749,7 +1749,7 @@ for (url in Inside_Out_5){
   content5 <- page %>%html_nodes("div.text.show-more__control")%>%html_text()
 }
 
-InsideOut_5 <- data.frame(
+Inside_Out_5 <- data.frame(
   Name = names5[1:25],
   Date = date5 [1:25],
   Rating = rating5 [1:25],
@@ -1757,7 +1757,7 @@ InsideOut_5 <- data.frame(
   Content = content5[1:25]
 )
 
-InsideOut_5
+Inside_Out_5
 
 
 Inside_Out_6 <- "https://www.imdb.com/title/tt3915174/reviews/_ajax?&paginationKey=g4w6ddbmqyzdo6ic4oxwjnjtrxumqaj33imdx77mapc7gvt5pjt6udsyouyvrmjnb4dqjmsh7zwwimyt2lzqvgabdnrgo"
@@ -1772,7 +1772,7 @@ for (url in Inside_Out_6){
   content6 <- page %>%html_nodes("div.text.show-more__control")%>%html_text()
 }
 
-InsideOut_6 <- data.frame(
+Inside_Out_6 <- data.frame(
   Name = names6[1:25],
   Date = date6 [1:25],
   Rating = rating6 [1:25],
@@ -1780,7 +1780,7 @@ InsideOut_6 <- data.frame(
   Content = content6[1:25]
 )
 
-InsideOut_6
+Inside_Out_6
 
 
 Inside_Out_7 <- "https://www.imdb.com/title/tt3915174/reviews/_ajax?&paginationKey=g4w6ddbmqyzdo6ic4oxwjnjqrpsm6ar63intx67ia3d7yvtgoq366ssyoqyfxmzndb4k4qjqg2srpqqwcdiu7wjcphjjora"
@@ -1798,7 +1798,7 @@ for (url in Inside_Out_7){
   content7 <- page %>%html_nodes("div.text.show-more__control")%>%html_text()
 }
 
-InsideOut_7 <- data.frame(
+Inside_Out_7 <- data.frame(
   Name = names7[1:25],
   Date = date7 [1:25],
   Rating = rating7 [1:25],
@@ -1806,7 +1806,7 @@ InsideOut_7 <- data.frame(
   Content = content7[1:25]
 )
 
-InsideOut_7
+Inside_Out_7
 
 
 
@@ -1825,7 +1825,7 @@ for (url in Inside_Out_8){
   content8 <- page %>%html_nodes("div.text.show-more__control")%>%html_text()
 }
 
-InsideOut_8 <- data.frame(
+Inside_Out_8 <- data.frame(
   Name = names8[1:25],
   Date = date8 [1:25],
   Rating = rating8 [1:25],
@@ -1833,7 +1833,7 @@ InsideOut_8 <- data.frame(
   Content = content8[1:25]
 )
 
-InsideOut_8
+Inside_Out_8
 
 
 Inside_Out_9 <- "https://www.imdb.com/title/tt3915174/reviews/_ajax?&paginationKey=g4w6ddbmqyzdo6ic4oxwjmrzrtu4scj23uotd6poatd72uteoq366ssyom4fxmrpdv4k5geifoo7mmgoloynu7mfs3xpq4y"
@@ -1851,7 +1851,7 @@ for (url in Inside_Out_9){
   content9 <- page %>%html_nodes("div.text.show-more__control")%>%html_text()
 }
 
-InsideOut_9 <- data.frame(
+Inside_Out_9 <- data.frame(
   Name = names9[1:25],
   Date = date9 [1:25],
   Rating = rating9 [1:25],
@@ -1859,7 +1859,7 @@ InsideOut_9 <- data.frame(
   Content = content9[1:25]
 )
 
-InsideOut_9
+Inside_Out_9
 
 
 Inside_Out_10 <- "https://www.imdb.com/title/tt3915174/reviews/_ajax?&paginationKey=g4w6ddbmqyzdo6ic4oxwjmrwrhs4qab72mmdd6piapb74ul5pjt6udszou4flprlb4dyram565wfb3rli6ohhtjalvq6k"
@@ -1876,7 +1876,7 @@ for (url in Inside_Out_10){
   content10 <- page %>%html_nodes("div.text.show-more__control")%>%html_text()
 }
 
-InsideOut_10 <- data.frame(
+Inside_Out_10 <- data.frame(
   Name = names10[1:25],
   Date = date10 [1:25],
   Rating = rating10 [1:25],
@@ -1884,7 +1884,7 @@ InsideOut_10 <- data.frame(
   Content = content10[1:25]
 )
 
-InsideOut_10
+Inside_Out_10
 
 
 Inside_Out_11 <- "https://www.imdb.com/title/tt3915174/reviews/_ajax?&paginationKey=g4w6ddbmqyzdo6ic4oxwjmrxrlum6ab63ukt377pahc7suleoq366ssyomzflnbndn4k45jmjkwbi73ucz2b4dui3vo6xwa"
@@ -1902,7 +1902,7 @@ for (url in Inside_Out_11){
   content11 <- page %>%html_nodes("div.text.show-more__control")%>%html_text()
 }
 
-InsideOut_11 <- data.frame(
+Inside_Out_11 <- data.frame(
   Name = names11[1:25],
   Date = date11 [1:25],
   Rating = rating11 [1:25],
@@ -1910,7 +1910,7 @@ InsideOut_11 <- data.frame(
   Content = content11[1:25]
 )
 
-InsideOut_11
+Inside_Out_11
 
 
 #url12
@@ -1929,7 +1929,7 @@ for (url in Inside_Out_12){
   content12 <- page %>%html_nodes("div.text.show-more__control")%>%html_text()
 }
 
-InsideOut_12 <- data.frame(
+Inside_Out_12 <- data.frame(
   Name = names12[1:25],
   Date = date12 [1:25],
   Rating = rating12 [1:25],
@@ -1937,7 +1937,7 @@ InsideOut_12 <- data.frame(
   Content = content12[1:25]
 )
 
-InsideOut_12
+Inside_Out_12
 
 
 combine_Inside_Out <- rbind(Inside_Out_1, Inside_Out_2, Inside_Out_3, Inside_Out_4, Inside_Out_5, Inside_Out_6, Inside_Out_7, Inside_Out_8, Inside_Out_9, Inside_Out_10, Inside_Out_11, Inside_Out_12)
