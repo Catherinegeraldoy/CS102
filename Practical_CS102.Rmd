@@ -1,0 +1,76 @@
+---
+title: "Practical_CS102"
+author: "Catherine Geraldoy"
+date: "2024-03-05"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#A
+
+data("warpbreaks")
+
+num_cols <- sapply(warpbreaks, is.numeric)
+num_cols
+
+int_cols <- sapply(warpbreaks, is.integer)
+int_cols
+
+num_int_cols <- warpbreaks[, num_cols | int_cols]
+num_int_cols
+
+#3 error code data("warpbreaks")
+
+#num_cols <- sapply(warpbreaks, is.numeric)
+#int_cols <- sapply(warpbreaks, is.integer)
+#num_int_cols <- warpbreaks[, num_cols | int_cols]
+
+#for (i in 1:ncol(num_int_cols)) {
+# if (!is.integer(num_int_cols[, i])) {
+#    num_int_cols[, i] <- as.integer(num_int_cols[, i])
+#  }
+#}
+
+#3 error message
+#Error in 1:ncol(num_int_cols) : argument of length 0
+
+#B
+
+exfile_lines <- readLines("exampleFile.txt")
+
+exfile_comments <- lines[grepl("^//", lines)]
+print(exfile_comments)
+
+exfile_dtlines <- lines[!grepl("^//", lines)]
+exfile_dtlines
+
+exfile_date <- gsub("^// Survey data. Created : ", "", comments[1])
+exfile_date
+
+exfile_split <- strsplit(data_lines, ";")
+exfile_split
+
+
+exfile_max_flds <- max(sapply(split_data, length))
+exfile_max_flds
+
+exfile_split <- lapply(split_data, function(x) c(x, rep(NA, max_fields - length(x))))
+exfile_split
+
+exfilematrix <- matrix(unlist(split_data), ncol = max_fields, byrow = TRUE)
+exfilematrix
+
+exfile_field_names <- gsub("^// Field [0-9]+: ", "", comments[2:4])
+exfile_field_names
+
+colnames(exfilematrix) <- exfile_field_names
+colnames(exfilematrix)
+
+
+
+
+```
